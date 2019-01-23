@@ -86,7 +86,7 @@ Turtle1.forward(100)
 Turtle2.backward(100)
 window.close_on_mouse_click()
 ###############################################################################
-# Done: 5.
+# DONE: 5.
 #   COMMIT-and-PUSH your work (after changing this TO-DO to DONE).
 #
 #   As a reminder, here is how you should do so:
