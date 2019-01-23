@@ -49,7 +49,7 @@ def pyth(a,b):
 
 
 ###############################################################################
-# TODO: 4a.  Define a function immediately below this _TODO_.
+# Done: 4a.  Define a function immediately below this _TODO_.
 #   It takes two arguments:
 #     -- a string that represents a color (e.g. 'red')
 #     -- a positive integer that represents the thickness of a Pen.
@@ -75,8 +75,15 @@ def pyth(a,b):
 #   for the arguments) to test whether you defined the function correctly.
 #
 ###############################################################################
-
-
+import rosegraphics as rg
+window=rg.TurtleWindow()
+Turtle1 = rg.SimpleTurtle('turtle')
+Turtle2 = rg.SimpleTurtle('turtle')
+Turtle1.pen=rg.Pen('green',1)
+Turtle2.pen=rg.Pen('black',5)
+Turtle1.forward(100)
+Turtle2.backward(100)
+window.close_on_mouse_click()
 ###############################################################################
 # TODO: 5.
 #   COMMIT-and-PUSH your work (after changing this TO-DO to DONE).
