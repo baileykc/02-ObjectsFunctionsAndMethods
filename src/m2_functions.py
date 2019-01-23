@@ -22,6 +22,7 @@ import rosegraphics as rg
 
 def main():
     print(pyth(3, 4))
+    print(pyth(3, 6))
     """
     TESTS the functions that you will write below.
     You write the tests per the _TODO_s below.
@@ -71,7 +72,7 @@ def pyth(a,b):
 #
 #   You may name the function and its parameters whatever you wish.
 #
-# TODO: 4b.  In main, CALL your function at least TWICE (with different values
+# Done: 4b.  In main, CALL your function at least TWICE (with different values
 #   for the arguments) to test whether you defined the function correctly.
 #
 ###############################################################################
@@ -85,7 +86,7 @@ Turtle1.forward(100)
 Turtle2.backward(100)
 window.close_on_mouse_click()
 ###############################################################################
-# TODO: 5.
+# Done: 5.
 #   COMMIT-and-PUSH your work (after changing this TO-DO to DONE).
 #
 #   As a reminder, here is how you should do so:
