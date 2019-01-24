@@ -31,19 +31,25 @@ Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
 ###############################################################################
 
 import rosegraphics as rg
+import math
 
 
 def main():
     """ Calls the other functions in this module to demo them. """
+    hello()
+    turtle_fun()
 
-def math():
+    
+
+def hello():
     """ Prints some calculated values. """
-    import math
     x = math.cos(math.pi)
     print(x)
     y = math.sin(math.pi)
     print(y)
-def turtle():
+
+
+def turtle_fun():
     """
     Constructs a TurtleWindow,
     constructs a classic SimpleTurtle and asks it to do some things,
@@ -63,4 +69,5 @@ def turtle():
 # -----------------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
 # -----------------------------------------------------------------------------
+
 main()
