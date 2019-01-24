@@ -28,10 +28,12 @@ def main():
     """
     window = rg.TurtleWindow()
 
+
     run_example()
     try_methods()
     try_functions()
     try_methods_and_functions()
+
 
     window.close_on_mouse_click()
 
@@ -97,8 +99,10 @@ def draw_many_squares(my_turtle, number_of_squares, size, twist):
         my_turtle.draw_square(size)
         my_turtle.left(twist)
 
+
+
 ###############################################################################
-# TODO: 3.
+# Done: 3.
 #   There are four FUNCTIONS defined ABOVE this:
 #     main
 #     run_example
@@ -124,17 +128,6 @@ def draw_many_squares(my_turtle, number_of_squares, size, twist):
 #
 ###############################################################################
 
-
-def try_methods():
-    main()
-    phillip = rg.SimpleTurtle('turtle')
-    window = rg.TurtleWindow()
-    phillip.pen = rg.Pen('brown', 5)
-    phillip.forward(150)
-    phillip.left(90)
-    phillip.forward(50)
-    phillip.backward(100)
-
     """
     Constructs a SimpleTurtle and sets its   pen   to a new rg.Pen
     that is 'brown' with thickness 5.
@@ -145,20 +138,18 @@ def try_methods():
       -- backward  100 units
     """
     ###########################################################################
-    # TODO: 4. Implement and test this function, per its doc-string above.
+    # Done: 4. Implement and test this function, per its doc-string above.
     #   The testing code (in main) is already written for you.
     ###########################################################################
 
-    main()
-    phillip=rg.SimpleTurtle('turtle')
-    window=rg.TurtleWindow()
-    phillip.pen=rg.Pen('brown', 5)
+
+def try_methods():
+    phillip = rg.SimpleTurtle('turtle')
+    phillip.pen = rg.Pen('brown', 5)
     phillip.forward(150)
     phillip.left(90)
     phillip.forward(50)
     phillip.backward(100)
-
-
 
 ###############################################################################
 # IMPORTANT: Read the NOTE below before you try to implement the next function!
@@ -224,8 +215,17 @@ def try_methods_and_functions():
     #     draw_many_squares
     #   function defined above.  If you don't see why, ** ASK FOR HELP. **
     ###########################################################################
-
-
+edgar = rg.SimpleTurtle()
+edgar.pen= rg.Pen('blue',5)
+edgar.backward(150)
+edgar.speed=1
+draw_many_squares(edgar,1,50,15)
+edgar.speed=100
+edgar.pen= rg.Pen('black', 3)
+draw_many_squares(edgar,8,300,60)
+edgar.backward(200)
+edgar.draw_circle(30)
+edgar.draw_square(50)
 # -----------------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
 # -----------------------------------------------------------------------------
