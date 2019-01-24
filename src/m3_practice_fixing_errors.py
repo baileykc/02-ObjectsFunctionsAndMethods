@@ -59,10 +59,9 @@ def turtle_fun():
     alan = rg.SimpleTurtle()
     alan.pen = rg.Pen('blue', 30)
     alan.paint_bucket = rg.PaintBucket('yellow')
-    alan.back(3 * (47 + 16))
+    alan.backward(3 * (47 + 16))
     alan.begin_fill()
-    alan.circle(25)
-    alan.end_fill()
+    alan.draw_circle(25)
     alan.forward(200)
     window.close_on_mouse_click()
 
