@@ -162,7 +162,7 @@ def try_functions():
      -- One jumps to (-50, 50), then moves (while drawing) to (100, 100)
     """
     ###########################################################################
-    # TODO: 5. Implement and test this function, per its doc-string above.
+    # Done: 5. Implement and test this function, per its doc-string above.
     #   The testing code (in main) is already written for you.
     #
     #    NOTE: This function requires
@@ -208,7 +208,7 @@ def try_methods_and_functions():
       8. Draw a SQUARE whose sides are each of length 50.
     """
     ###########################################################################
-    # TODO: 6. Implement and test this function, per its doc-string above.
+    # Done: 6. Implement and test this function, per its doc-string above.
     #   The testing code (in main) is already written for you.
     #
     #   NOTE: This function should ** CALL ** the
