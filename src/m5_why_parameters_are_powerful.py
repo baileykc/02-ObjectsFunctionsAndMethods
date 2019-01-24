@@ -12,26 +12,46 @@ def main():
     """
     Calls the other functions in this module to test and/or demonstrate them.
     """
-    drawing_speed = 10  # Bigger numbers mean faster drawing
+    drawing_speed = 90  # Bigger numbers mean faster drawing
     window = rg.TurtleWindow()
     window.tracer(drawing_speed)
 
 
+
+
+def help_help(point, radius, circles, color, thickness):
+      turtle = rg.SimpleTurtle()
+      turtle.speed = 100
+      turtle.pen_up()
+      turtle.go_to(point)
+      turtle.set_heading(0)
+      for k in range(1, 11):
+          turtle.pen_up()
+          turtle.forward(radius)
+          turtle.left(90)
+          turtle.pen_down()
+          turtle.pen = rg.Pen(color, thickness)
+          turtle.draw_circle(radius * circles)
+
+help_help(rg.Point(100, 0), 10, 10, 'green', 5)
+help_help(rg.Point(100, -50), 3, 10, 'orange', 6)
+help_help(rg.Point(100, 0),10 , 5, 'blue', 7)
+help_help(rg.Point(100, 50), 3, 7, 'black', 8)
 
     # -------------------------------------------------------------------------
     # When the _TODO_s ask you to test YOUR code,
     # comment-out the following two statements and replace them
     # by calls to   better_draw_circles   et al as needed.
     # -------------------------------------------------------------------------
-    draw_circles(rg.Point(100, 50))
-    draw_circles(rg.Point(-200, 0))
-    better_draw_circles(rg.Point(100,50),3)
-    better_draw_circles(rg.Point(-200,0),7)
-    even_better_draw_circles(rg.Point(100, 50), 15, 5, 'blue', 5)
-    even_better_draw_circles(rg.Point(-200,0), 9, 10, 'green', 5)
+    #draw_circles(rg.Point(100, 50))
+    #draw_circles(rg.Point(-200, 0))
+    #better_draw_circles(rg.Point(100,50),3)
+    #better_draw_circles(rg.Point(-200,0),7)
+    #even_better_draw_circles(rg.Point(100, 50), 15, 5, 'blue', 5)
+    #even_better_draw_circles(rg.Point(-200,0), 9, 10, 'green', 5)
 
-    window.update()
-    window.close_on_mouse_click()
+
+
 
 
 ###############################################################################
@@ -153,7 +173,7 @@ def better_draw_circles(point, radius):
 
 
 ###############################################################################
-# TODO: 4a.
+# Done: 4a.
 #   In the previous _TODO_, you made a MORE POWERFUL version
 #   of   draw_circles   by introducing a new PARAMETER for the amount
 #   by which the radii of the concentric circles increase.
@@ -175,7 +195,7 @@ def better_draw_circles(point, radius):
 #   to the body of the   even_better_draw_circles   function defined below.
 #   Then add parameters and modify the code to make them work!
 #
-# TODO: 4b.
+# Done: 4b.
 #   In   main  at the place indicated, comment-out the existing calls
 #   to  better_draw_circles  and add at least two calls to the improved
 #   even_better_draw_circles  function, to TEST that your modified code is
